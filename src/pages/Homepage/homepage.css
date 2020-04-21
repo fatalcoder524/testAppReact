@@ -1,0 +1,21 @@
+.centering{
+    width: max-content;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+   border-style: solid;
+   padding-bottom: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+    border-width: 5px !important;
+}
+.heading{
+    transform: scaleX(1.15);
+}
+.container{
+    position:relative;
+    height: calc(100vh - 100px);
+}

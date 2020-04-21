@@ -8,6 +8,15 @@ export default class About extends React.Component {
         <div>
           <NavigationBar/>
           <h1>About</h1>
+          Username: 4EOA3dNx2R
+
+Database name: 4EOA3dNx2R
+
+Password: milaXvmt4X
+
+Server: remotemysql.com
+
+Port: 3306
           <Footer/>
         </div>
       );
