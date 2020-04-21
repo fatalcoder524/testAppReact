@@ -1,21 +1,17 @@
 import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Footer extends Component {
     render() {
         return (
-            <div class="d-flex flex-column">
-                test
-  <footer class="footer">
-    <div>
-      <a href="https://coreui.io">CoreUI</a>
-      <span>&copy; 2020 creativeLabs.</span>
-    </div>
-    <div class="ml-auto">
-      <span>Powered by</span>
-      <a href="https://coreui.io">CoreUI</a>
-    </div>
-  </footer>
-</div>
+            <div class="fixed-bottom text-center d-flex flex-column bg-dark text-white">
+            <footer class="footer">
+                <div>
+                fatalcoder524
+                <span>&copy; 2020</span>
+                </div>
+            </footer>
+            </div>
         )
     }
 }
