@@ -4,6 +4,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div class="d-flex flex-column">
+                test
   <footer class="footer">
     <div>
       <a href="https://coreui.io">CoreUI</a>
