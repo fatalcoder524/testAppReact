@@ -23,6 +23,7 @@ handleSubmit(e) {
     e.preventDefault();
     const {username,password} = this.state
     alert("Username: "+username+" | Password: "+password);
+    this.setState({username : '',password:''})
 }
     render() {
       const { username, password } = this.state;
