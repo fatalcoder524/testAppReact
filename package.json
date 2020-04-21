@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "gitupdate":"git add . && git commit -m 'Auto Commit' && git push origin master"
+    "gitupdate":"git add . && git commit -m `test`  && git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
