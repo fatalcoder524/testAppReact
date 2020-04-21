@@ -2,7 +2,7 @@
   "name": "testapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fatalcoder524.github.io/testApp",
+  "homepage": "http://fatalcoder524.github.io/testAppReact",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
