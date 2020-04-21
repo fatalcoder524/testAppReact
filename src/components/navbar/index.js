@@ -18,7 +18,7 @@ function NavigationBar()
     <LinkContainer to="/testAppReact">
               <Nav.Link>Home</Nav.Link>
     </LinkContainer>
-    <LinkContainer to="/about">
+    <LinkContainer to="/testAppReact/about">
         <Nav.Link>About</Nav.Link>
     </LinkContainer>
     </Nav>
