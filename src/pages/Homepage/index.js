@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationBar from '../../components/navbar';
 import Footer from '../../components/footer';
-import { Form, FormControl, Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import './homepage.css';
 
 
@@ -10,7 +10,8 @@ class Homepage extends React.Component {
     super();
     this.state = {
       username : '',
-      password:''
+      password:'',
+      loggedIn:false,
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -20,10 +21,24 @@ class Homepage extends React.Component {
     this.setState({ [name]: value });
 }
 
-handleSubmit(e) {
+async handleSubmit(e) {
     e.preventDefault();
-    const {username,password} = this.state
-    alert("Username: "+username+" | Password: "+password);
+    let auth=await fetch('/api/test')
+    let name=await auth.json()
+    name.forEach((val)=>{
+      if(val.username==this.state.username && val.pwd==this.state.password)
+      {
+        this.setState({loggedIn:true})
+        return
+      }
+    })
+    if(this.state.loggedIn==true)
+    {
+      alert('Login Sucessfull')
+    }
+    else{
+      alert('Login Unsucessfull')
+    }
     this.setState({username : '',password:''})
 }
     render() {
