@@ -4,6 +4,7 @@ import Footer from '../../components/footer';
 import { Form, FormControl, Button } from 'react-bootstrap';
 import './homepage.css';
 
+
 class Homepage extends React.Component {
   constructor() {
     super();
@@ -49,7 +50,7 @@ handleSubmit(e) {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" name="password" value={password} onChange={this.handleChange}/>
               </Form.Group>
-              <Button variant="primary w-100" type="submit">
+              <Button variant="primary w-100" type="submit" disabled={password.length==0 || username.length==0}>
                 Submit
               </Button>
             </Form>
