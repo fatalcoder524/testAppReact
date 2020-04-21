@@ -11,11 +11,11 @@ function NavigationBar()
     return (
     <div>
     <Navbar bg="light" expand="lg">
-  <Navbar.Brand><Link to="/">TestApp</Link></Navbar.Brand>
+  <Navbar.Brand><Link to="/testAppReact">TestApp</Link></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
-    <LinkContainer to="/">
+    <LinkContainer to="/testAppReact">
               <Nav.Link>Home</Nav.Link>
     </LinkContainer>
     <LinkContainer to="/about">

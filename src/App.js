@@ -9,7 +9,6 @@ function App() {
   return (
     <Router>
     <Route exact path='/testAppReact' component={Homepage}/>
-    <Route exact path='/' component={Homepage}/>
     <Route exact path='/about' component={About}/>
   </Router>
   );
